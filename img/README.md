@@ -22,15 +22,10 @@ so a busy shot will still read well.
 The fastest way to add them: open this folder on GitHub, choose **Add file →
 Upload files**, drag them in, and commit. The site redeploys on its own.
 
-## About the placeholder photographs
+## What is here
 
-The cover, the Straits and the Irish currently fall back to freely-licensed
-images on Wikimedia Commons, loaded by the reader's browser rather than stored
-here. They are a stopgap and they are not as good as our own photographs.
+All five slots are filled with our own photographs. Replacing one is just a
+matter of overwriting the file with the same name; the page needs no change.
 
-The order each slot tries is: the local file in this folder, then the Commons
-image, then the page's own engraved artwork. Adding a file here therefore
-replaces the placeholder automatically — nothing needs unwiring first.
-
-If the Commons images are kept long-term rather than replaced, credit their
-photographers; the licences ask for attribution and the page does not carry it.
+If a file is ever removed, that slot falls back to the page's own engraved
+artwork rather than breaking.

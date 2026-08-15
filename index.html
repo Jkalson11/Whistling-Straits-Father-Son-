@@ -301,6 +301,10 @@
   .player{ text-align:center; padding:clamp(24px,3.2vw,34px) 20px; }
   .player .role{ font-size:9.5px; letter-spacing:.26em; text-transform:uppercase; color:var(--brass); }
   .player .name{ font-family:var(--serif); font-size:clamp(25px,3.1vw,31px); font-weight:400; margin:8px 0 0; line-height:1.12; }
+  .player .moniker{
+    display:block; margin-top:6px; font-family:var(--serif); font-style:italic;
+    font-size:16px; color:var(--brass);
+  }
   .player .hcp{ margin-top:15px; padding-top:13px; border-top:1px solid var(--rule-soft); display:flex; justify-content:center; gap:30px; }
   .player .hcp div{ font-size:9.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-faint); }
   .player .hcp b{ display:block; font-family:var(--serif); font-size:25px; font-weight:400; letter-spacing:0; color:var(--ink); margin-top:4px; }
@@ -478,7 +482,7 @@
   </div>
 
   <!-- Drop img/cover.jpg into the folder and it appears here automatically -->
-  <img class="cover-photo" src="img/cover.jpg" alt="" onerror="if(this.dataset.alt){this.removeAttribute('data-alt');this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Whistling%20Straights%20golf%20course%2C%20arieal%20view.jpg?width=2000'}else{this.remove()}" data-alt="1">
+  <img class="cover-photo" src="img/cover.jpg" alt="" onerror="this.remove()">
 
   <div class="cover-inner wrap">
     <div class="cover-frame">
@@ -574,49 +578,49 @@
       <div class="sec-num"></div>
       <div>
         <h2>The Field</h2>
-        <p class="lede">Two Kalsons, one who married in, and one who simply never left. Three of them sit inside two shots of each other. The fourth is a 2.7 and will be handing out strokes all week.</p>
+        <p class="lede">Two Kalsons, one who married in, and one who simply never left. Three of them sit inside two shots of each other; the fourth is a 2.7 and hands out strokes to the rest all week.</p>
       </div>
     </div>
 
     <div class="grid grid-4">
       <div class="cell player">
         <div class="role">The Father</div>
-        <p class="name">Michael Kalson</p>
+        <p class="name">Michael Kalson<span class="moniker">The Game, M.D.</span></p>
         <div class="hcp">
           <div>Index<b>12.4</b></div>
           <div>Cups<b><span class="tbd">&mdash;</span></b></div>
         </div>
-        <p class="note">The reason the week exists. Everything else on this page is logistics.</p>
+        <p class="note">Diagnoses every swing in the group and none of his own. <em>Mega trouble</em> gets called from the cart before the ball has landed. His gimmies have been measured at roughly the length of a flagstick and are not open to discussion.</p>
       </div>
 
       <div class="cell player">
         <div class="role">The Son</div>
-        <p class="name">Josh Kalson</p>
+        <p class="name">Josh Kalson<span class="moniker">Pre-Op</span></p>
         <div class="hcp">
           <div>Index<b>14.5</b></div>
           <div>Cups<b><span class="tbd">&mdash;</span></b></div>
         </div>
-        <p class="note">Booked it, built this, and takes more strokes than anyone in the field. Draw your own conclusions.</p>
+        <p class="note">Organised the week and takes the most strokes in it. Playing on a hip that gets replaced a fortnight after we land, under a pain-management regime the surgeon has not been consulted about. Breaking 90 is a win. So is finishing.</p>
       </div>
 
       <div class="cell player">
         <div class="role">Married In</div>
-        <p class="name">Matt Reiner</p>
+        <p class="name">Matt Reiner<span class="moniker">The Stick</span></p>
         <div class="hcp">
           <div>Index<b>2.7</b></div>
           <div>Cups<b><span class="tbd">&mdash;</span></b></div>
         </div>
-        <p class="note">Joined the family and plays as though it were a condition of entry. Gives shots to all three and starts favourite anyway.</p>
+        <p class="note">Married into the family and was immediately the best player in it. Longer off the tee than half the PGA field, with a short game filed under Spieth. Gives shots to all three of us and starts favourite regardless.</p>
       </div>
 
       <div class="cell player">
         <div class="role">Family, Unofficially</div>
-        <p class="name">Jon Vandegrift</p>
+        <p class="name">Jon Vandegrift<span class="moniker">Twelve Deep</span></p>
         <div class="hcp">
           <div>Index<b>12.5</b></div>
           <div>Cups<b><span class="tbd">&mdash;</span></b></div>
         </div>
-        <p class="note">Fifteen years, the first of them as my boss. Since promoted to the friend I have mislaid entire afternoons with, on golf courses in several states.</p>
+        <p class="note">Shoots anywhere between 74 and 92, and nobody, himself included, knows which until the back nine. The only fixed quantity is twelve beers on the course and a Manhattan or three at the bar. Fifteen years, the first as my boss, since promoted.</p>
       </div>
     </div>
 
@@ -698,7 +702,7 @@
         <div class="time">Midday</div>
         <div class="what">
           <h4>Lunch between rounds</h4>
-          <p>Roughly five hours between tees. Eat properly, sit down, and stay off your feet &mdash; thirty-six on foot is a long day and the second nine of the afternoon is where it shows.</p>
+          <p>Roughly five hours between tees. Eat properly and sit down &mdash; whatever the legs are doing by the second nine of the afternoon gets decided here.</p>
         </div>
         <div class="where">Clubhouse<em>Whistling Straits</em></div>
       </div>
@@ -707,7 +711,7 @@
         <div class="time">3:24 PM</div>
         <div class="what">
           <h4>The Irish &mdash; Afternoon</h4>
-          <p>The same eighteen in a different wind, which at Kohler means a different golf course. Sunset is close to eight; the pace needs watching on the back nine.</p>
+          <p>The same eighteen in a different wind, which at Kohler means a different golf course. <b>Take carts for this one.</b> Sunset is 7:46 and it is properly dark by 8:17; a four-hour round gets in with twenty minutes to spare, and four and a half does not. Walking it is how the last two holes get played in the dark.</p>
         </div>
         <div class="where">Course<em>Whistling Straits</em></div>
       </div>
@@ -734,7 +738,7 @@
         <div class="time">10:30 AM<br>11:00 AM</div>
         <div class="what">
           <h4>Lessons &mdash; four, in pairs</h4>
-          <p>Two at half past, two on the hour, included in the hotel package. Confirm where they are held: if the academy is at Blackwolf Run rather than the Straits practice ground, the eleven o&rsquo;clock pair is very tight against the tee time.</p>
+          <p>Two at half past, two on the hour, included in the hotel package, and held at Whistling Straits &mdash; so the second pair walks off the range and onto the first tee with time in hand.</p>
         </div>
         <div class="where">Instruction<em>Kohler Golf Academy</em></div>
       </div>
@@ -771,7 +775,7 @@
         <div class="time">Early</div>
         <div class="what">
           <h4>Check out first</h4>
-          <p>Bags in the car before the round, not after. The room is booked for three nights and there is no coming back to it once the tee time starts.</p>
+          <p>The room is booked for three nights and there is no coming back to it once the tee time starts. Check out before the round and leave the bags with the front desk; the car collects them and us on the way through.</p>
         </div>
         <div class="where">Lodging<em>The Carriage House</em></div>
       </div>
@@ -797,8 +801,8 @@
       <div class="entry">
         <div class="time"><span class="tbd">Departure</span></div>
         <div class="what">
-          <h4>Drive to Milwaukee</h4>
-          <p>Allow ninety minutes to MKE with a stop. Finishing around half past two makes a flight from about five o&rsquo;clock comfortable and anything before four a gamble.</p>
+          <h4>Car to Milwaukee</h4>
+          <p>Roughly ninety minutes to MKE. Finishing near half past two makes a five o&rsquo;clock flight comfortable and anything before four a gamble &mdash; book the pickup once the flights are set.</p>
         </div>
         <div class="where">Airport<em>MKE</em></div>
       </div>
@@ -836,7 +840,7 @@
             <ellipse cx="300" cy="278" rx="52" ry="12" fill="#1b2b34"/>
             <g><line x1="512" y1="240" x2="512" y2="200" stroke="#c8ad78" stroke-width="1.4"/><path d="M512 200 L538 207 L512 214 Z" fill="#a8874a"/></g>
           </svg>
-          <img src="img/straits.jpg" alt="The Straits Course" onerror="if(this.dataset.alt){this.removeAttribute('data-alt');this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Whistling%20Straits%20golf%20course%2C%20far%20shot.jpg?width=1600'}else{this.remove()}" data-alt="1">
+          <img src="img/straits.jpg" alt="The Straits Course" onerror="this.remove()">
         </div>
         <div class="cell-body">
           <h3>The Straits</h3>
@@ -868,7 +872,7 @@
             </g>
             <g><line x1="430" y1="238" x2="430" y2="200" stroke="#c8ad78" stroke-width="1.4"/><path d="M430 200 L455 207 L430 214 Z" fill="#a8874a"/></g>
           </svg>
-          <img src="img/irish.jpg" alt="The Irish Course" onerror="if(this.dataset.alt){this.removeAttribute('data-alt');this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Whistling%20Straits%20Irish.jpeg?width=1600'}else{this.remove()}" data-alt="1">
+          <img src="img/irish.jpg" alt="The Irish Course" onerror="this.remove()">
         </div>
         <div class="cell-body">
           <h3>The Irish</h3>
@@ -880,7 +884,8 @@
             <div><span>Rating / Slope</span><span>75.6 / 146</span></div>
             <div><span>Host of</span><span>Palmer Cup 2005</span></div>
             <div><span>We play it</span><span>Twice, Friday</span></div>
-            <div><span>Play</span><span>Walking, caddie required</span></div>
+            <div><span>Play</span><span>Carts, cart path only</span></div>
+            <div><span>Caddies</span><span>Available, not required</span></div>
             <div><span>Our tee</span><span class="tbd">To confirm</span></div>
           </div>
         </div>
@@ -1320,7 +1325,7 @@
       <div class="cell">
         <h3>Horse &amp; Plow</h3>
         <p class="sub">Friday &middot; the casual option</p>
-        <p>The tavern under The American Club. Beer list, good burgers, low ceilings, no ceremony. Exactly right after thirty-six on foot.</p>
+        <p>The tavern under The American Club. Beer list, good burgers, low ceilings, no ceremony. Exactly right after thirty-six holes.</p>
       </div>
       <div class="cell">
         <h3>Blackwolf Run</h3>
@@ -1364,11 +1369,11 @@
       <div class="cell">
         <h3>Getting There</h3>
         <p class="sub">Flights &amp; ground</p>
-        <p>Milwaukee Mitchell is the practical airport, roughly an hour south of Kohler. Green Bay and Appleton are alternatives; O&rsquo;Hare is about two and a half hours and rarely worth it.</p>
+        <p>Milwaukee Mitchell, roughly an hour south of Kohler, with a car service running both ways so nobody is driving. Green Bay and Appleton are alternatives; O&rsquo;Hare is two and a half hours and rarely worth it.</p>
         <div class="spec">
           <div><span>Outbound</span><span class="tbd">Flight &amp; time</span></div>
           <div><span>Return</span><span class="tbd">Flight &amp; time</span></div>
-          <div><span>Ground</span><span class="tbd">Car or transfer</span></div>
+          <div><span>Ground</span><span>Car service, both ways</span></div>
           <div><span>Sunday note</span><span>Golf until ~6 PM</span></div>
         </div>
       </div>
@@ -1376,11 +1381,10 @@
 
     <div class="open-items" style="margin-top:34px;">
       <h3>Still to Settle</h3>
-      <p class="sub">Four things, none of them urgent yet</p>
+      <p class="sub">Three things, none of them urgent yet</p>
       <ul>
         <li><b>Cancel The Baths.</b> The 4:00 PM tee on Sunday is still sitting on the resort&rsquo;s itinerary and we will be on the road by then. Better released than no-showed.</li>
-        <li><b>Sunday flights.</b> Meadow Valleys should finish around half past two and it is ninety minutes to MKE. Five o&rsquo;clock out of Milwaukee is comfortable; four is not.</li>
-        <li><b>Saturday&rsquo;s lessons.</b> Four of them at 10:30 and 11:00, then the Straits at 12:12. Confirm where they are held &mdash; if the academy is at Blackwolf Run, the second pair is very tight indeed.</li>
+        <li><b>Sunday flights and the pickup.</b> Meadow Valleys should finish near half past two and it is ninety minutes to MKE. Five o&rsquo;clock out of Milwaukee is comfortable, four is not &mdash; book the car once the flights are set.</li>
         <li><b>The tees and the sides.</b> One set of tees for the week and two teams, both agreed before Friday morning. The cards recommend the Green for three of us; Matt can play wherever he likes and it will not help the rest of us.</li>
       </ul>
     </div>
@@ -1404,7 +1408,7 @@
         <ol class="notes">
           <li><b>Take one more club.</b> The wind off Lake Michigan is heavier and steadier than it looks from the clubhouse. Into it, take two and swing easier.</li>
           <li><b>Everything is a bunker.</b> On the Straits, the sand outside the ropes is still sand. Ask before you ground the club &mdash; it has cost better players than us.</li>
-          <li><b>Walk it properly.</b> No carts on the Straits or the Irish, and Friday is thirty-six of them. Broken-in shoes, two pairs of socks, and a real lunch in between.</li>
+          <li><b>The Straits is the only forced march.</b> Walking only, caddie required, about four and a half hours. The Irish takes carts on the path and Blackwolf takes them anywhere &mdash; on a thirty-six-hole Friday, use them.</li>
           <li><b>Take the line you are given.</b> The caddies read break off the lake that is invisible from where you are standing. The man who overrules his caddie on Saturday will be hearing about it on Sunday.</li>
         </ol>
       </div>
@@ -1412,7 +1416,7 @@
         <ol class="notes">
           <li><b>Play the front edge.</b> Firm turf, low approaches, putter from off the green. This is not target golf, and the high soft one you have been practising will not be rewarded.</li>
           <li><b>Layers.</b> August in the village and August on the eighth tee are two different months. A shell in the bag, every round, no exceptions.</li>
-          <li><b>Sunday is a cart day.</b> Meadow Valleys allows them. After three days on foot, take one and do not feel a thing about it.</li>
+          <li><b>Ride on Sunday.</b> Meadow Valleys allows carts anywhere. With a flight to catch and a hip on borrowed time, take one and do not think about it again.</li>
           <li><b>Look up on seventeen.</b> Whatever the number ends up being, stand on that tee an extra moment. That is the one all four of you will still be describing in ten years.</li>
         </ol>
       </div>
