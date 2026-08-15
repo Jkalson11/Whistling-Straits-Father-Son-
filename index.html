@@ -478,7 +478,7 @@
   </div>
 
   <!-- Drop img/cover.jpg into the folder and it appears here automatically -->
-  <img class="cover-photo" src="img/cover.jpg" alt="" onerror="this.remove()">
+  <img class="cover-photo" src="img/cover.jpg" alt="" onerror="if(this.dataset.alt){this.removeAttribute('data-alt');this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Whistling%20Straights%20golf%20course%2C%20arieal%20view.jpg?width=2000'}else{this.remove()}" data-alt="1">
 
   <div class="cover-inner wrap">
     <div class="cover-frame">
@@ -836,7 +836,7 @@
             <ellipse cx="300" cy="278" rx="52" ry="12" fill="#1b2b34"/>
             <g><line x1="512" y1="240" x2="512" y2="200" stroke="#c8ad78" stroke-width="1.4"/><path d="M512 200 L538 207 L512 214 Z" fill="#a8874a"/></g>
           </svg>
-          <img src="img/straits.jpg" alt="The Straits Course" onerror="this.remove()">
+          <img src="img/straits.jpg" alt="The Straits Course" onerror="if(this.dataset.alt){this.removeAttribute('data-alt');this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Whistling%20Straits%20golf%20course%2C%20far%20shot.jpg?width=1600'}else{this.remove()}" data-alt="1">
         </div>
         <div class="cell-body">
           <h3>The Straits</h3>
@@ -868,7 +868,7 @@
             </g>
             <g><line x1="430" y1="238" x2="430" y2="200" stroke="#c8ad78" stroke-width="1.4"/><path d="M430 200 L455 207 L430 214 Z" fill="#a8874a"/></g>
           </svg>
-          <img src="img/irish.jpg" alt="The Irish Course" onerror="this.remove()">
+          <img src="img/irish.jpg" alt="The Irish Course" onerror="if(this.dataset.alt){this.removeAttribute('data-alt');this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Whistling%20Straits%20Irish.jpeg?width=1600'}else{this.remove()}" data-alt="1">
         </div>
         <div class="cell-body">
           <h3>The Irish</h3>
