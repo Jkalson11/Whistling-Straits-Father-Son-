@@ -27,12 +27,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Requires Pages to be switched on once, by hand:
+      #   Settings -> Pages -> Build and deployment -> Source: GitHub Actions
+      # Enabling it from here needs a permission the app does not have.
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          # Turns Pages on automatically the first time this runs, so there is
-          # no need to visit Settings at all.
-          enablement: true
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3

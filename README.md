@@ -5,6 +5,13 @@ Wisconsin. 20–23 August 2026.
 
 **https://jkalson11.github.io/Whistling-Straits-Father-Son-/**
 
+> **One-time setup.** The link goes live once Pages is switched on:
+> **Settings → Pages → Build and deployment → Source → GitHub Actions**.
+> That is the whole job, and it only has to be done once. Enabling it from
+> the workflow needs a permission the app does not have, so the first deploy
+> fails until this is done. Afterwards every push to `main` republishes on
+> its own.
+
 Michael Kalson · Josh Kalson · Matt Reiner · Jon Vandegrift
 
 ## The page
